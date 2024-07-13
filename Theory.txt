@@ -8,3 +8,9 @@
 --> Pipleline : A series of steps that build, test & deploy automatically to environments.
 --> Controller : The central, coordinating process which stores configuration, loads plugins, and renders the various user interfaces for Jenkins. It is the primary instance of a Jenkins pipeline.
 --> Agent : An agent is typically a machine, or container(containerized env), which connects to a Jenkins controller and executes tasks(Jobs) when directed by the controller.
+--> Stage : An pipeline is broken down into sections called Stages. Each stage has atleast one "step" - ie, scripts/commands to carry out actionable tasks to be carried out in deployment env inside a Pipeline.
+--> plugins : Dependencies of Jenkins server which are used to carry out the diffrent unit test specified in the pipeline.
+eg: Docker plugin is used to resolve deployment related test/issues inside the pipeline, while node or npm plugin is used to resolve unit tests of the application during testing inside the CI/CD pipeline before pushing it into deployment.
+
+**Jenkinsfile
+It is a declarative approach of setting up a Jenkins pipeline by writing code(in a Jenkinsfile).
