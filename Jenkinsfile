@@ -28,7 +28,7 @@ pipeline { //pipeline init
                     }
                 }
 
-                stage('Backend Unit test 2') { //S-2.4.0
+                stage('Backend Unit test 2') { //S-4.2.0
                     steps {
                         sh 'cd backend && npm i && npm run test:unit'
                     }
