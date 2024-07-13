@@ -1,0 +1,10 @@
+**JENKINS
+> Jenkins is a self-contained, open source automation server which can be used to automate all sorts of tasks relted to building, testing, and delivering or deploying software.
+> It provides a scalable CI/CD pipeline that are used by many prod-grade companies.
+
+**Terminologies
+--> Continuous Integration(CI) : CI is the practice of automating the integration of code changes from multiple contributors  into a single software project. it's a primary "DevOps best practice" allowing devs to ferquently merge code changes into a central repo where builds and test then run. It is a pre-cursor for CD.
+--> Continuous Delivery(CD) : CD is an extension of continuous integration since it automatically deploys all code changes to a testing and/or production enviornment after the build stage.
+--> Pipleline : A series of steps that build, test & deploy automatically to environments.
+--> Controller : The central, coordinating process which stores configuration, loads plugins, and renders the various user interfaces for Jenkins. It is the primary instance of a Jenkins pipeline.
+--> Agent : An agent is typically a machine, or container(containerized env), which connects to a Jenkins controller and executes tasks(Jobs) when directed by the controller.
